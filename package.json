@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "babel-watch index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -12,6 +12,14 @@
     "license": "ISC",
     "dependencies": {
         "apollo-server": "^2.4.8",
-        "graphql": "^14.2.1"
+        "graphql": "^14.2.1",
+        "node-fetch": "^2.3.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.4.0",
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-watch": "^7.0.0"
     }
 }

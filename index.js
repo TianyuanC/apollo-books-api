@@ -1,23 +1,5 @@
-import { ApolloServer, gql } from "apollo-server";
-import { getAll } from "./BooksAPI.js";
-
-const typeDefs = gql`
-    type Book {
-        title: String
-        authors: [String]
-        description: String
-    }
-
-    type Query {
-        books: [Book]
-    }
-`;
-
-const resolvers = {
-    Query: {
-        books: () => getAll()
-    }
-};
+import { ApolloServer } from "apollo-server";
+import { typeDefs, resolvers } from "./graphql";
 
 const server = new ApolloServer({ typeDefs, resolvers });
 server.listen().then(({ url }) => {

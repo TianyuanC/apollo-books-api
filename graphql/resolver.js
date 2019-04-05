@@ -1,7 +1,13 @@
-import { getAll } from "../BooksAPI.js";
+import { getAll, get, search, update } from "../BooksAPI.js";
 
 export const resolvers = {
     Query: {
-        books: () => getAll()
+        getBooks: () => getAll(),
+        getBook: (root, { id }) => get(id)
+    },
+
+    Mutation: {
+        search: (root, { input }) => search(input.term),
+        updateShelf: (root, { input }) => update({ id: input.id }, input.shelf)
     }
 };

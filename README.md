@@ -12,8 +12,9 @@ http://localhost:4000/
 
 ## Sample Query
 
-The idea of GraphQL is self-documented, so there is no point writing extra sample queries like the following, and the ideally we should explore the schema ourselves to discover the query formats.  
-But the purpose of the repository is an introduction of GraphQL, and I think it will be helpful to beginner so play around with different types of query/mutation
+The idea of GraphQL is self-documented, so there is no point writing extra sample queries like the following, and ideally we should be able to explore the schema ourselves to discover the query formats.
+
+Since the purpose of this repository is an introduction of GraphQL, I think it will be helpful for beginners to play around with different types of query/mutation. And those sample queries are merely starting points. Have fun and happy hacking!
 
 ### Get all books
 

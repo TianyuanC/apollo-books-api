@@ -10,8 +10,8 @@ export const typeDefs = gql`
     }
 
     type Query {
-        getBooks: [Book]
-        getBook(id: ID!): Book
+        books: [Book]
+        book(id: ID!): Book
         search(input: SearchInput): [Book]
     }
 

@@ -12,6 +12,7 @@ export const typeDefs = gql`
     type Query {
         getBooks: [Book]
         getBook(id: ID!): Book
+        search(input: SearchInput): [Book]
     }
 
     input SearchInput {
@@ -24,7 +25,6 @@ export const typeDefs = gql`
     }
 
     type Mutation {
-        search(input: SearchInput): [Book]
         updateShelf(input: ShelfInput): Book
     }
 `;
